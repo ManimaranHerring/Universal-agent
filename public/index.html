@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Universal Agent Starter</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header>
+<h1>Universal Agent Starter</h1>
+<p>RFQ → Quote & AP 3‑Way Match (local demo)</p>
+</header>
+
+
+<main>
+<section class="card">
+<h2>RFQ → Quote Agent</h2>
+<form id="rfqForm">
+<div class="row">
+<label>Buyer Company <input name="buyer_company" placeholder="Acme Ltd" /></label>
+<label>Buyer Contact <input name="buyer_contact" placeholder="Jane Doe" /></label>
+<label>Currency <input name="currency" value="USD" /></label>
+<label>Margin Target (0.0–0.5) <input name="margin_target" value="0.18" /></label>
+</div>
+<div class="row">
+<label>RFQ CSV <input type="file" name="rfq" accept=".csv" /></label>
+</div>
+<div class="row">
+<button type="submit">Generate Quote</button>
+<button type="button" id="rfqSample">Use Sample RFQ</button>
+<a href="/samples/rfq_sample.csv" target="_blank">Download sample CSV</a>
+</div>
+</form>
+<div id="rfqOutput"></div>
+</section>
+
+
+</html>
