@@ -1,0 +1,23 @@
+
+
+---
+
+
+## 2) `package.json`
+**PATH:** `package.json`
+```json
+{
+"name": "universal-agent-starter",
+"version": "0.1.0",
+"private": true,
+"description": "Demo agents: RFQ→Quote and AP 3-Way Match",
+"main": "src/server.js",
+"scripts": {
+"start": "node src/server.js"
+},
+"dependencies": {
+"csv-parse": "^5.5.6",
+"express": "^4.19.2",
+"multer": "^1.4.5-lts.1"
+}
+}
